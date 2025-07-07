@@ -38,17 +38,17 @@ The prediction module uses a **Gradient Boosting** model trained on mental healt
 
 - Inputs include demographic data, employment status, family mental health history, and workplace environment.  
 - The model returns a prediction (Needs Treatment / No Treatment Needed) with a probability score.  
-- Built with **Python** and **scikit-learn** or similar boosting libraries.
+- Built with **Python** and **scikit-learn** .
 
 ---
 
 ## Chatbot Module
+Our  mental health chatbot leverages Natural Language Processing (NLP) and a Sequential Deep Learning Model to classify user intents and provide supportive responses.
 
-Our chatbot leverages **Natural Language Processing (NLP)** techniques and a **Sequential Deep Learning Model** (such as an LSTM or Transformer) to understand and respond to user queries related to mental health.
-
-- Handles conversational flow interactively.  
-- Provides empathetic, supportive responses based on trained data.  
-- Built with frameworks such as **TensorFlow**, **PyTorch**, or **Keras** for model training.  
+- Trained on a custom dataset using Keras with a TensorFlow backend.
+- Uses NLTK for tokenization and lemmatization.
+- Built with a simple Feedforward Neural Network, easily extendable to LSTM or Transformer models.
+- Designed to respond interactively and empathetically to mental health-related queries.
 
 ---
 
@@ -69,7 +69,7 @@ To keep users informed, the app periodically scrapes the WHO website for the lat
 - **Machine Learning:** Python, scikit-learn (Gradient Boosting), TensorFlow/Keras (Sequential models)  
 - **NLP:** Custom deep learning models for chatbot interaction  
 - **Web Scraping:** Python (BeautifulSoup, Requests)  
-- **Deployment:** Localhost / Cloud hosting (TBD)
+- **Deployment:** Localhost 
 
 ---
 
@@ -96,13 +96,13 @@ To keep users informed, the app periodically scrapes the WHO website for the lat
 
 ---
 ## Usage
-Navigate to the homepage to read about the project and access the prediction check.
+- Navigate to the homepage to read about the project and access the prediction check.
 
-Complete the prediction form to receive your mental health assessment.
+- Complete the prediction form to receive your mental health assessment.
 
-Chat with the bot for real-time support and advice.
+- Chat with the bot for real-time support and advice.
 
-Explore the latest mental health news curated from WHO.
+- Explore the latest mental health news curated from WHO.
 
 ---
 ## Contact
