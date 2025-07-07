@@ -3,7 +3,7 @@ import { Box, Divider } from "@mui/material";
 import StepWizard from "./form";
 import Chatbot from "./chatbot";
 
-const PredictionPage = () => {
+const assessment = () => {
   return (
     <Box
   display="flex"
@@ -43,4 +43,4 @@ const PredictionPage = () => {
   );
 };
 
-export default PredictionPage;
+export default assessment;

@@ -123,7 +123,7 @@ const Chatbot = () => {
               borderRadius: 2,
               bgcolor:
                 msg.sender === "user"
-                  ? "rgba(222, 61, 150, 0.3)"
+                  ? "rgba(222, 61, 150, 0.15)"
                   : "rgba(228, 215, 221, 0.7)",
               color: "rgba(56, 34, 44, 0.9)",
               alignSelf:
@@ -154,9 +154,9 @@ const Chatbot = () => {
           variant="contained"
           onClick={sendMessage}
           sx={{
-            bgcolor: "rgba(222, 61, 150, 0.5)",
+            bgcolor: "rgba(222, 61, 150, 0.23)",
             "&:hover": {
-              bgcolor: "rgba(222, 61, 150, 0.7)",
+              bgcolor: "rgba(222, 61, 150, 0.23)",
             },
           }}
         >

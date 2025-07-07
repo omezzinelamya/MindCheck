@@ -10,7 +10,7 @@ import {
   CircularProgress,
 } from "@mui/material";
 
-export default function Home() {
+export default function Welcome() {
   const theme = useTheme();
 
   const [factSheets, setFactSheets] = useState([]);

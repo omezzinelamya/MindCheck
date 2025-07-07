@@ -24,8 +24,8 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/home" element={<HomePage />} />
-              <Route path="/Prediction" element={<PredictionPage />} />
+              <Route path="/Welcome" element={<HomePage />} />
+              <Route path="/assessment" element={<PredictionPage />} />
 
             </Routes>
             <Footer />

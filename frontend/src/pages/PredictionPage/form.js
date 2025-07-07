@@ -23,25 +23,25 @@ const steps = [
     fields: [
       {
         name: "self_employed",
-        label: "Are you self-employed?",
+        label: "Are you currently self-employed?",
         type: "select",
-        options: ["Yes", "No", "Unknown"],
+        options: ["Yes", "No", "Prefer not to say"],
       },
       {
         name: "no_employees",
-        label: "Company size?",
+        label: "What is the size of your organization?",
         type: "select",
         options: ["1-5", "6-25", "26-100", "100-500", "500-1000", "More than 1000"],
       },
       {
         name: "tech_company",
-        label: "Do you work in a tech company?",
+        label: "Do you work in a technology-focused company?",
         type: "select",
         options: ["Yes", "No"],
       },
       {
         name: "remote_work",
-        label: "Do you work remotely?",
+        label: "Do you work remotely (full-time or part-time)?",
         type: "select",
         options: ["Yes", "No"],
       },
@@ -52,21 +52,21 @@ const steps = [
     fields: [
       {
         name: "family_history",
-        label: "Family history of mental illness?",
+        label: "Do you have a family history of mental health conditions?",
         type: "select",
         options: ["Yes", "No"],
       },
       {
         name: "treatment",
-        label: "Have you sought treatment?",
+        label: "Have you ever received mental health treatment?",
         type: "select",
         options: ["Yes", "No"],
       },
       {
         name: "work_interfere",
-        label: "Does mental health interfere with your work?",
+        label: "How often does your mental health affect your work performance?",
         type: "select",
-        options: ["Never", "Rarely", "Sometimes", "Often", "Unknown"],
+        options: ["Never", "Rarely", "Sometimes", "Often", "Prefer not to say"],
       },
     ],
   },
@@ -75,13 +75,13 @@ const steps = [
     fields: [
       {
         name: "anonymity",
-        label: "Is anonymity respected at work?",
+        label: "Is your privacy/anonymity respected regarding mental health at work?",
         type: "select",
-        options: ["Yes", "No", "Don't know"],
+        options: ["Yes", "No", "Not sure"],
       },
       {
         name: "leave",
-        label: "Ease of taking mental health leave?",
+        label: "How easy is it to take a mental health-related leave of absence?",
         type: "select",
         options: [
           "Very easy",
@@ -95,11 +95,11 @@ const steps = [
         name: "benefits",
         label: "Are mental health benefits offered?",
         type: "select",
-        options: ["Yes", "No", "Don't know"],
+        options: ["Yes", "No", "Not sure"],
       },
       {
         name: "care_options",
-        label: "Aware of care options at work?",
+        label: "Are you aware of mental health care resources provided by your employer?",
         type: "select",
         options: ["Yes", "No", "Not sure"],
       },

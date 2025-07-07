@@ -6,15 +6,15 @@ import FlexedBox from "./FlexedBox";
 
 function Navbar() {
   const { palette } = useTheme();
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("Welcome");
   const location = useLocation();
 
   useEffect(() => {
     const path = location.pathname.toLowerCase();
-    if (path === "/" || path === "/home") {
-      setActive("home");
-    } else if (path === "/prediction") {
-      setActive("prediction");
+    if (path === "/" || path === "/Welcome") {
+      setActive("Welcome");
+    } else if (path === "/assessment") {
+      setActive("assessment");
     }
   }, [location.pathname]);
 
@@ -31,8 +31,8 @@ function Navbar() {
       {/* RIGHT SIDE */}
       <FlexedBox gap="2rem" alignItems="center">
         <Link
-          to="/home"
-          onClick={() => setActive("home")}
+          to="/Welcome"
+          onClick={() => setActive("Welcome")}
           style={{
             color: active === "home" ? "rgba(157, 134, 145, 0.9)" : palette.grey[700],
             fontWeight: active === "home" ? "bold" : "normal",
@@ -41,21 +41,21 @@ function Navbar() {
             cursor: "pointer",
           }}
         >
-          Home
+          Welcome
         </Link>
 
         <Link
-          to="/prediction"
-          onClick={() => setActive("prediction")}
+          to="/assessment"
+          onClick={() => setActive("assessment")}
           style={{
-            color: active === "prediction" ? "rgba(157, 134, 145, 0.9)" : palette.grey[700],
-            fontWeight: active === "prediction" ? "bold" : "normal",
+            color: active === "assessment" ? "rgba(157, 134, 145, 0.9)" : palette.grey[700],
+            fontWeight: active === "assessment" ? "bold" : "normal",
             textDecoration: "none",
             fontSize: "16px",
             cursor: "pointer",
           }}
         >
-          Prediction
+          assessment
         </Link>
       </FlexedBox>
     </FlexedBox>
